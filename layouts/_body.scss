@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&family=Shrikhand&display=swap');
+
+@import "../utils/varialbes";
+
+
+body{
+    margin: 0;
+    padding: 0;
+
+    
+    color : $clr-txt;
+
+
+    p{
+        font-family: 'Roboto', sans-serif;
+     
+    }
+
+    h1 {
+        font-family: 'Shrikhand', cursive;
+        
+    }
+}

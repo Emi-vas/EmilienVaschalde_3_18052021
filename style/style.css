@@ -1,8 +1,33 @@
-.header__logo {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0; }
-  .header__logo img {
-    width: 50%; }
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&family=Shrikhand&display=swap");
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px; }
+
+/*------  Acueil ----*/
+body {
+  margin: 0;
+  padding: 0;
+  color: #000; }
+  body p {
+    font-family: 'Roboto', sans-serif; }
+  body h1 {
+    font-family: 'Shrikhand', cursive; }
+
+/*------  Acueil ----*/
+.top__localisation {
+  color: #333333;
+  background: #ededed;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  padding: 3px 0; }
+  .top__localisation i {
+    position: absolute;
+    /*pour pas qu'il rentre dans le calcul du centrage*/
+    left: 110px; }
+
+/*------  Acueil ----*/
 
 /*# sourceMappingURL=style.css.map */
