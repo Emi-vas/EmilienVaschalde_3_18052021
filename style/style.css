@@ -21,20 +21,24 @@ body {
   color: #333333;
   background: linear-gradient(#cccccc 0%, #ededed 10%);
   font-weight: bold;
-  text-align: center;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 3px 0; }
+  .top__localisation p {
+    position: relative; }
   .top__localisation i {
     position: absolute;
     /*pour pas qu'il rentre dans le calcul du centrage*/
-    left: 105px; }
+    left: -30px; }
 
 main {
   padding: 30px 10px;
   text-align: center;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
   background: #F6F6F6; }
   main h2 {
     margin: 0 auto;
@@ -70,5 +74,39 @@ main {
       border-radius: 40px 40px;
       opacity: 0;
       z-index: -1; }
+
+.fonctionnement {
+  padding: 50px 20px; }
+  .fonctionnement h2 {
+    margin-top: 0;
+    margin-bottom: 25px; }
+  .fonctionnement__bloc {
+    display: flex;
+    border-radius: 15px 15px;
+    box-shadow: 1px 3px 7px #cccccc;
+    margin: 20px 0;
+    align-items: center;
+    background: #F6F6F6;
+    position: relative;
+    padding: 10px 0;
+    margin-left: 12px;
+    /*pour compenser le chiffre*/
+    font-weight: bold; }
+    .fonctionnement__bloc i {
+      padding: 0 30px;
+      color: gray;
+      font-size: 1.2em; }
+    .fonctionnement__bloc__chiffre {
+      color: white;
+      background: #9356DC;
+      font-weight: lighter;
+      padding: 2px 7px;
+      border-radius: 50%;
+      position: absolute;
+      left: -13px; }
+    .fonctionnement__bloc:hover {
+      background: #f2eafb; }
+      .fonctionnement__bloc:hover i {
+        color: #9356DC; }
 
 /*# sourceMappingURL=style.css.map */

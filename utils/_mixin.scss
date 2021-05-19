@@ -39,3 +39,31 @@
         z-index: -1;
     }
 }
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin section {
+    padding: 50px $marge;
+    h2 {
+        margin-top : 0;
+        margin-bottom: 25px;
+    }
+    
+}
+
+@mixin box {
+    display: flex;
+
+    border-radius: 15px 15px;
+    box-shadow: 1px 3px 7px $bg-loc1;
+    margin : 20px 0;
+}
+
+@mixin marge-titre {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}

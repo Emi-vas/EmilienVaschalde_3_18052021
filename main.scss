@@ -9,17 +9,19 @@
 .top__localisation {
     color: $clr-txt-alt;
     background:  linear-gradient($bg-loc1 0%, $bg-loc2 10%);
-                
     font-weight: bold;
 
-    text-align: center;
-    position: relative;
-
+    @include flex-center;
+        
     padding: 3px 0;
+
+    p {
+        position: relative;
+    }
 
     i {
         position: absolute;  /*pour pas qu'il rentre dans le calcul du centrage*/
-        left: 105px;
+        left: -30px;
     }
 }
 
@@ -27,10 +29,9 @@ main {
     padding: 30px 10px;
     text-align: center;
     
-    display: flex;
+    @include flex-center;
     flex-direction: column;
-    align-items: center;
-    
+
     background: $bg-bloc;
 
     h2 {
@@ -47,4 +48,48 @@ main {
         @include button-main;
     }
 
+}
+
+
+.fonctionnement {
+    @include section;
+
+    &__bloc {
+        @include box;
+        align-items: center;
+        background: $bg-bloc; 
+
+        position: relative;
+
+        padding: 10px 0;
+        margin-left: 12px;    /*pour compenser le chiffre*/
+        font-weight: bold;
+
+        i {
+            padding: 0 30px;
+            color: $clr-txt-alt2;
+            font-size: 1.2em;
+            
+        }   
+
+        &__chiffre {
+            color: white;
+            background: $clr-prim;
+            font-weight: lighter;
+            padding: 2px 7px;
+            
+            border-radius: 50%;
+    
+            position: absolute;
+            left : -13px;
+        }
+
+        &:hover {
+            background: lighten($color: $clr-prim, $amount: 35);
+
+            i {
+                color: $clr-prim;
+            }
+        }
+    }
 }
