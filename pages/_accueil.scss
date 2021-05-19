@@ -1,21 +1,3 @@
 @import "../utils/varialbes";
 
-$bg-loc1 :  lighten($color: $clr-txt, $amount: 30);
-$bg-loc2 :  lighten($color: $clr-txt, $amount: 93);
-
-.top__localisation {
-    color: lighten($color: $clr-txt, $amount: 20);
-    background: $bg-loc2;
-    font-weight: bold;
-
-    text-align: center;
-    position: relative;
-
-    padding: 3px 0;
-
-    i {
-        position: absolute;  /*pour pas qu'il rentre dans le calcul du centrage*/
-        left: 110px;
-    }
-}
 

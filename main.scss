@@ -1,9 +1,23 @@
 
 @import "./layouts/header";
 @import "./layouts/body";
-@import "./pages/accueil";
 
 @import "./utils/varialbes";
 
 
+.top__localisation {
+    color: lighten($color: $clr-txt, $amount: 20);
+    background:  linear-gradient($bg-loc1 0%, $bg-loc2 10%);
+                
+    font-weight: bold;
 
+    text-align: center;
+    position: relative;
+
+    padding: 3px 0;
+
+    i {
+        position: absolute;  /*pour pas qu'il rentre dans le calcul du centrage*/
+        left: 105px;
+    }
+}

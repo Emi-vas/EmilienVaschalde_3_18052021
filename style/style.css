@@ -18,7 +18,7 @@ body {
 /*------  Acueil ----*/
 .top__localisation {
   color: #333333;
-  background: #ededed;
+  background: linear-gradient(#cccccc 0%, #ededed 10%);
   font-weight: bold;
   text-align: center;
   position: relative;
@@ -26,8 +26,6 @@ body {
   .top__localisation i {
     position: absolute;
     /*pour pas qu'il rentre dans le calcul du centrage*/
-    left: 110px; }
-
-/*------  Acueil ----*/
+    left: 105px; }
 
 /*# sourceMappingURL=style.css.map */

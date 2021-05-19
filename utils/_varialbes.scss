@@ -7,3 +7,6 @@ $clr-txt : #000;
 
 
 /*------  Acueil ----*/
+
+$bg-loc1 :  lighten($color: $clr-txt, $amount: 80);
+$bg-loc2 :  lighten($color: $clr-txt, $amount: 93);
