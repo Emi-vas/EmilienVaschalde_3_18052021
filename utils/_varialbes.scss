@@ -3,7 +3,10 @@ $clr-sec : #FF79DA;
 $clr-ter : #99E2D0;
 
 $clr-txt : #000;
+$clr-txt-alt : lighten($color: $clr-txt, $amount: 20);
+$clr-txt-alt2 : lighten($color: $clr-txt, $amount: 50);
 
+$bg-bloc : #F6F6F6;
 
 
 /*------  Acueil ----*/
