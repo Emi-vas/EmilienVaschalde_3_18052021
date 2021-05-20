@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&family=Shrikhand&display=swap");
+/*footer*/
+/*------  Acueil ----*/
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: #000; }
+  body p, body h2, body h3, body a, body ul {
+    font-family: 'Roboto', sans-serif; }
+  body h1 {
+    font-family: 'Shrikhand', cursive; }
+
+/*footer*/
+/*------  Acueil ----*/
+header h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: lighter; }
+header i {
+  position: absolute;
+  top: 33px;
+  left: 30px;
+  color: #333333;
+  font-size: 1.2em;
+  font-weight: bold; }
+
+footer {
+  padding: 20px 23px;
+  color: white;
+  background: #333333; }
+  footer h1 {
+    margin: 5px 0;
+    font-size: 1.2em;
+    text-align: left;
+    font-weight: 100; }
+  footer .footer__titre {
+    color: white; }
+  footer ul {
+    list-style: none;
+    padding-left: 0; }
+  footer li {
+    padding: 3px 0; }
+    footer li i {
+      padding-right: 10px;
+      font-size: 0.9em; }
+  footer a {
+    color: #d9d9d9;
+    text-decoration: none; }
+    footer a:hover {
+      color: white; }
+
+.image img {
+  width: auto;
+  height: 250px;
+  object-fit: cover; }
+
+/*# sourceMappingURL=menu_style.css.map */

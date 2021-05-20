@@ -46,7 +46,7 @@
     justify-content: center;
 }
 
-@mixin section {
+@mixin section {   /*section de page main*/
     padding: 50px $marge;
     
     h2 {
@@ -56,7 +56,7 @@
     
 }
 
-@mixin box {
+@mixin box {  /*box de la page main*/
     display: flex;
 
     border-radius: $rad-bloc $rad-bloc;

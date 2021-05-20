@@ -6,6 +6,7 @@ h1 {
   margin-top: 20px;
   margin-bottom: 10px; }
 
+/*footer*/
 /*------  Acueil ----*/
 body {
   margin: 0;
@@ -42,6 +43,7 @@ footer {
     footer a:hover {
       color: white; }
 
+/*footer*/
 /*------  Acueil ----*/
 .top__localisation {
   color: #333333;
@@ -102,11 +104,13 @@ main {
       z-index: -1; }
 
 .fonctionnement {
+  /*section de page main*/
   padding: 50px 23px; }
   .fonctionnement h2 {
     margin-top: 0;
     margin-bottom: 25px; }
   .fonctionnement__bloc {
+    /*box de la page main*/
     display: flex;
     border-radius: 15px 15px;
     box-shadow: 1px 3px 7px #cccccc;
@@ -136,6 +140,7 @@ main {
         color: #9356DC; }
 
 .restaurant {
+  /*section de page main*/
   padding: 50px 23px;
   background: #F6F6F6;
   display: flex;
@@ -144,6 +149,7 @@ main {
     margin-top: 0;
     margin-bottom: 25px; }
   .restaurant__bloc {
+    /*box de la page main*/
     display: flex;
     border-radius: 15px 15px;
     box-shadow: 1px 3px 7px #cccccc;
@@ -177,7 +183,7 @@ main {
     .restaurant__bloc__coeur--actif:hover {
       transform: scale(1.2);
       opacity: 1;
-      transition: all 200ms; }
+      transition: all 50ms; }
     .restaurant__bloc__nouveau {
       background: #99E2D0;
       color: #278870;

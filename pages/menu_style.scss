@@ -1,0 +1,9 @@
+@import "../layouts/_body";
+@import "../layouts/header";
+@import "../layouts/_footer";
+
+.image img {
+    width: auto;
+    height: 250px;
+    object-fit: cover;
+}
