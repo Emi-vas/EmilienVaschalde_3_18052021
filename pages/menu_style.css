@@ -10,7 +10,8 @@ body {
   body p, body h2, body h3, body a, body ul {
     font-family: 'Roboto', sans-serif; }
   body h1 {
-    font-family: 'Shrikhand', cursive; }
+    font-family: 'Shrikhand', cursive;
+    font-weight: lighter; }
 
 /*footer*/
 /*------  Acueil ----*/
@@ -19,7 +20,7 @@ header h1 {
   margin-top: 20px;
   margin-bottom: 10px;
   font-weight: lighter; }
-header i {
+header .fleche {
   position: absolute;
   top: 33px;
   left: 30px;
@@ -56,5 +57,38 @@ footer {
   width: auto;
   height: 250px;
   object-fit: cover; }
+
+main {
+  border-top-left-radius: 40px 40px;
+  border-top-right-radius: 40px 40px;
+  padding: 10px 23px;
+  position: relative;
+  top: -50px;
+  height: 500px;
+  background: #F6F6F6; }
+  main h1 {
+    font-size: 1.8em; }
+  main .main__titre {
+    position: relative; }
+    main .main__titre .main__titre__coeur {
+      font-size: 1.3em;
+      position: absolute;
+      bottom: 30px;
+      right: 20px;
+      bottom: 10px; }
+    main .main__titre .main__titre__coeur--actif {
+      font-size: 1.3em;
+      position: absolute;
+      bottom: 30px;
+      right: 20px;
+      bottom: 10px;
+      background: -webkit-linear-gradient(#9356DC, #FF79DA);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      opacity: 0; }
+    main .main__titre .main__titre__coeur--actif:hover {
+      transform: scale(1.2);
+      opacity: 1;
+      transition: all 50ms; }
 
 /*# sourceMappingURL=menu_style.css.map */

@@ -121,17 +121,13 @@ main {
         
         &__coeur--actif {
             @include coeur;
-            background: -webkit-linear-gradient($clr-prim, $clr-sec);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            @include coeur-bg-actif;
 
-            opacity: 0;
         }
 
         &__coeur--actif:hover {
-            transform: scale(1.2);
-            opacity: 1;
-            transition: all 50ms;
+            @include coeur-actif-hover;
+
         }
 
         &__nouveau {

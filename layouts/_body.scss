@@ -8,18 +8,15 @@ body{
     margin: 0;
     padding: 0;
     width: 100%;
-
-    
+ 
     color : $clr-txt;
-
 
     p, h2, h3, a, ul{
         font-family: 'Roboto', sans-serif;
-     
     }
 
     h1 {
         font-family: 'Shrikhand', cursive;
-        
+        font-weight: lighter;
     }
 }

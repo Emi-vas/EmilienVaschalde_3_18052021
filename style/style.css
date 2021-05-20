@@ -1,10 +1,20 @@
 @charset "UTF-8";
+/*footer*/
+/*------  Acueil ----*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&family=Shrikhand&display=swap");
-h1 {
+header h1 {
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  font-weight: lighter; }
+header .fleche {
+  position: absolute;
+  top: 33px;
+  left: 30px;
+  color: #333333;
+  font-size: 1.2em;
+  font-weight: bold; }
 
 /*footer*/
 /*------  Acueil ----*/
@@ -16,7 +26,8 @@ body {
   body p, body h2, body h3, body a, body ul {
     font-family: 'Roboto', sans-serif; }
   body h1 {
-    font-family: 'Shrikhand', cursive; }
+    font-family: 'Shrikhand', cursive;
+    font-weight: lighter; }
 
 footer {
   padding: 20px 23px;

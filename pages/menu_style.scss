@@ -1,9 +1,46 @@
-@import "../layouts/_body";
-@import "../layouts/header";
+@import "../layouts/body";
+@import "../layouts/_header";
 @import "../layouts/_footer";
 
+@import "../utils/mixin";
 .image img {
     width: auto;
     height: 250px;
     object-fit: cover;
+}
+
+
+main {
+    border-top-left-radius: 40px 40px;
+    border-top-right-radius: 40px 40px;
+
+    padding : 10px $marge;
+    position: relative;
+    top: -50px;
+
+    height: 500px;
+
+    background: $bg-bloc;
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .main__titre {
+        position: relative;
+       
+        .main__titre__coeur {
+            @include coeur;
+            bottom: 10px;
+        }
+        .main__titre__coeur--actif {
+            @include coeur;
+            bottom: 10px;
+
+            @include coeur-bg-actif;
+        }
+        .main__titre__coeur--actif:hover {
+            @include coeur-actif-hover;
+        }
+    }
 }

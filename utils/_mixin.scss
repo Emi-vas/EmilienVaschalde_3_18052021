@@ -71,3 +71,16 @@
     bottom: 30px;
     right: 20px;
 }
+
+@mixin coeur-bg-actif {
+    background: -webkit-linear-gradient($clr-prim, $clr-sec);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+}
+
+@mixin coeur-actif-hover {
+    transform: scale(1.2);
+    opacity: 1;
+    transition: all 50ms;
+}
