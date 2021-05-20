@@ -131,7 +131,7 @@ main {
       object-fit: cover;
       border-top-left-radius: 15px 15px;
       border-top-right-radius: 15px 15px; }
-    .restaurant__bloc p {
+    .restaurant__bloc__texte {
       padding-left: 12px;
       line-height: 22px; }
     .restaurant__bloc__coeur {
@@ -152,5 +152,15 @@ main {
       transform: scale(1.2);
       opacity: 1;
       transition: all 100ms; }
+    .restaurant__bloc__nouveau {
+      background: #99E2D0;
+      color: #278870;
+      font-weight: bold;
+      font-size: 0.9em;
+      border-radius: 3px 3px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 7px 12px; }
 
 /*# sourceMappingURL=style.css.map */
