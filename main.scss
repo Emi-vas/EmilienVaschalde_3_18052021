@@ -1,6 +1,7 @@
 
 @import "./layouts/header";
 @import "./layouts/body";
+@import "./layouts/footer";
 
 @import "./utils/varialbes";
 @import "./utils/mixin";
@@ -130,7 +131,7 @@ main {
         &__coeur--actif:hover {
             transform: scale(1.2);
             opacity: 1;
-            transition: all 100ms;
+            transition: all 200ms;
         }
 
         &__nouveau {

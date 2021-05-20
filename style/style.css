@@ -10,11 +10,37 @@ h1 {
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
   color: #000; }
-  body p, body h2, body h3, body a {
+  body p, body h2, body h3, body a, body ul {
     font-family: 'Roboto', sans-serif; }
   body h1 {
     font-family: 'Shrikhand', cursive; }
+
+footer {
+  padding: 20px 23px;
+  color: white;
+  background: #333333; }
+  footer h1 {
+    margin: 5px 0;
+    font-size: 1.2em;
+    text-align: left;
+    font-weight: 100; }
+  footer .footer__titre {
+    color: white; }
+  footer ul {
+    list-style: none;
+    padding-left: 0; }
+  footer li {
+    padding: 3px 0; }
+    footer li i {
+      padding-right: 10px;
+      font-size: 0.9em; }
+  footer a {
+    color: #d9d9d9;
+    text-decoration: none; }
+    footer a:hover {
+      color: white; }
 
 /*------  Acueil ----*/
 .top__localisation {
@@ -76,7 +102,7 @@ main {
       z-index: -1; }
 
 .fonctionnement {
-  padding: 50px 20px; }
+  padding: 50px 23px; }
   .fonctionnement h2 {
     margin-top: 0;
     margin-bottom: 25px; }
@@ -110,7 +136,7 @@ main {
         color: #9356DC; }
 
 .restaurant {
-  padding: 50px 20px;
+  padding: 50px 23px;
   background: #F6F6F6;
   display: flex;
   flex-direction: column; }
@@ -151,7 +177,7 @@ main {
     .restaurant__bloc__coeur--actif:hover {
       transform: scale(1.2);
       opacity: 1;
-      transition: all 100ms; }
+      transition: all 200ms; }
     .restaurant__bloc__nouveau {
       background: #99E2D0;
       color: #278870;

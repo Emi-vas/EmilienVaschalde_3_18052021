@@ -1,0 +1,39 @@
+footer {
+    padding: 20px $marge;
+    color: white;
+    background: $clr-txt-alt;
+    
+    h1 {
+        margin : 5px 0;
+        font-size: 1.2em;
+        text-align: left;
+        font-weight: 100;
+    }
+
+    .footer__titre {
+        color: white;
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    li {
+        padding: 3px 0;
+
+        i {
+            padding-right: 10px;
+            font-size: 0.9em;
+        }
+    }
+
+    a {
+        color: $clr-txt-alt3;
+        text-decoration: none;
+
+        &:hover {
+            color: white;
+        }
+    }
+}
