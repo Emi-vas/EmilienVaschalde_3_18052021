@@ -27,11 +27,9 @@
 
 main {
     padding: 30px 10px;
-    text-align: center;
-    
+    text-align: center; 
     @include flex-center;
     flex-direction: column;
-
     background: $bg-bloc;
 
     h2 {
@@ -47,7 +45,6 @@ main {
     .button-main {
         @include button-main;
     }
-
 }
 
 
@@ -58,9 +55,7 @@ main {
         @include box;
         align-items: center;
         background: $bg-bloc; 
-
         position: relative;
-
         padding: 10px 0;
         margin-left: 12px;    /*pour compenser le chiffre*/
         font-weight: bold;
@@ -76,8 +71,7 @@ main {
             color: white;
             background: $clr-prim;
             font-weight: lighter;
-            padding: 2px 7px;
-            
+            padding: 2px 7px;   
             border-radius: 50%;
     
             position: absolute;
@@ -86,10 +80,56 @@ main {
 
         &:hover {
             background: lighten($color: $clr-prim, $amount: 35);
-
             i {
                 color: $clr-prim;
             }
+        }
+    }
+}
+
+.restaurant {
+    @include section;
+    background: $bg-bloc;
+    display: flex;
+    flex-direction: column;
+
+    &__bloc {
+        @include box;
+        flex-direction: column;
+        background: white;
+        position: relative;
+        img {
+            width: auto;
+            height: 200px;
+            object-fit: cover;
+
+            border-top-left-radius: $rad-bloc $rad-bloc;
+            border-top-right-radius: $rad-bloc $rad-bloc;
+        }
+
+        p {
+            padding-left: $pad-txt-bloc;
+            line-height: 22px;
+        }
+
+        &__coeur {
+            @include coeur; 
+ 
+        }
+        
+        &__coeur--actif {
+            @include coeur;
+            background: -webkit-linear-gradient($clr-prim, $clr-sec);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            opacity: 0;
+        }
+
+        &__coeur--actif:hover {
+            transform: scale(1.2);
+            opacity: 1;
+            transition: all 100ms;
         }
     }
 }
