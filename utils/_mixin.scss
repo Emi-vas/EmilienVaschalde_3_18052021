@@ -65,11 +65,14 @@
 }
 
 
+
+/*------------------------- Css du coeur ----------------------*/
 @mixin coeur {
     font-size: 1.3em;
     position: absolute;
     bottom: 30px;
     right: 20px;
+    color: $clr-txt-alt;
 }
 
 @mixin coeur-bg-actif {

@@ -24,14 +24,14 @@ header .fleche {
   position: absolute;
   top: 33px;
   left: 30px;
-  color: #333333;
+  color: #4d4d4d;
   font-size: 1.2em;
   font-weight: bold; }
 
 footer {
   padding: 20px 23px;
   color: white;
-  background: #333333; }
+  background: #4d4d4d; }
   footer h1 {
     margin: 5px 0;
     font-size: 1.2em;
@@ -53,6 +53,9 @@ footer {
     footer a:hover {
       color: white; }
 
+/*------------------------- Css du coeur ----------------------*/
+/*footer*/
+/*------  Acueil ----*/
 .image img {
   width: auto;
   height: 250px;
@@ -75,12 +78,14 @@ main {
       position: absolute;
       bottom: 30px;
       right: 20px;
+      color: #4d4d4d;
       bottom: 10px; }
     main .main__titre .main__titre__coeur--actif {
       font-size: 1.3em;
       position: absolute;
       bottom: 30px;
       right: 20px;
+      color: #4d4d4d;
       bottom: 10px;
       background: -webkit-linear-gradient(#9356DC, #FF79DA);
       -webkit-background-clip: text;
@@ -90,5 +95,35 @@ main {
       transform: scale(1.2);
       opacity: 1;
       transition: all 50ms; }
+
+.menu__titre {
+  font-weight: lighter;
+  font-size: 1.1em;
+  color: #4d4d4d;
+  text-transform: uppercase;
+  margin-bottom: 7px; }
+.menu__under {
+  height: 3px;
+  width: 15%;
+  background: #99E2D0; }
+
+.menu__compo {
+  /*box de la page main*/
+  display: flex;
+  border-radius: 15px 15px;
+  box-shadow: 1px 3px 7px #cccccc;
+  margin: 20px 0;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 12px;
+  color: #000;
+  background: white;
+  text-decoration: none; }
+  .menu__compo p {
+    margin: 0;
+    color: #4d4d4d;
+    line-height: 23px; }
+  .menu__compo--black {
+    color: black; }
 
 /*# sourceMappingURL=menu_style.css.map */
