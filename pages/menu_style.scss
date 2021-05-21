@@ -3,7 +3,7 @@
 @import "../layouts/_footer";
 
 @import "../utils/_mixin";
-@import "../utils/varialbes";
+@import "../utils/_varialbes";
 
 
 .image img {
@@ -20,12 +20,11 @@ main {
     position: relative;
     top: -50px;
 
-    height: 500px;
-
     background: $bg-bloc;
 
     h1 {
         font-size: 1.8em;
+        margin-bottom: 0;
     }
 
     .main__titre {
@@ -49,6 +48,7 @@ main {
 
 
 .menu {
+    margin: 40px 0;
 
     &__titre {
         font-weight: lighter;
@@ -64,27 +64,93 @@ main {
         width: 15%;
         background: $clr-ter;
     }
+
+    &__anim {
+        animation: menu 500ms forwards;
+        transform-origin: top ; 
+    }
 }
 
 .menu__compo {
+    
+
     @include box;
-    justify-content: space-between;
-    align-items: flex-end;
-    
-    padding: 12px; 
-    
+    justify-content: space-between;  
     color: $clr-txt;
     background: white;
     text-decoration: none;
 
+    overflow: hidden;
+
     p {
-        margin: 0;
+        font-size: 0.9em;
+        margin: 0;  /*pour pas géner l'effet*/
         color: $clr-txt-alt;
         line-height: 23px; 
+        padding: 12px;     /*contour*/
+        padding-right: 0;   /*pou pas qu'il y ai un retour à la ligne*/
     }
 
     &--black {
+        font-size: 1.1em;
         color: black;
     }
 
+    &__prix {   /* bloc prix + check*/
+        display: flex;
+        transform: translateX(60px);  /*on sort la div pour la rentrer avec l'effet*/
+
+        p {
+            align-self: flex-end;   /*mettre le prix en bas*/
+        }
+    }
+
+    &__check {
+        display: flex;
+        align-items: center;  /*icon centrée*/
+        margin-left: 20px;   /*espace avec le prix*/
+        
+        i{
+          font-size: 1.3em;
+          color: white;
+          padding: 0 17px;
+        }
+
+        border-bottom-right-radius: $rad-bloc $rad-bloc;
+        border-top-right-radius: $rad-bloc $rad-bloc;
+        background-color: $clr-ter;
+    }
+
+    &:hover {
+        & > .menu__compo__prix{
+            animation: slide 500ms forwards;
+            
+            i {
+                transform: rotate(1turn);
+                transition: transform 700ms;
+            }
+        }  
+    }
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(60px);  /*même que le décalage plus haut*/
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes menu {
+    from {
+        opacity: 0;
+        transform: scaleY(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scaleY(1);
+    }
 }
