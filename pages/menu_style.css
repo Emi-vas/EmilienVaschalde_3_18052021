@@ -8,6 +8,9 @@ body {
   padding: 0;
   width: 100%;
   color: #000; }
+  body a {
+    color: #000;
+    text-decoration: none; }
   body p, body h2, body h3, body a, body ul {
     font-family: 'Roboto', sans-serif; }
   body h1 {
@@ -177,5 +180,46 @@ main {
   to {
     opacity: 1;
     transform: scaleY(1); } }
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 200px; }
+  .button__main {
+    color: white;
+    background: linear-gradient(-10deg, #9356DC 10%, #FF79DA);
+    /*-15 deg ca met l'origine, en bas à droite. -5deg ca la met dessous, -30deg ca la met à droite*/
+    box-shadow: 1px 5px 5px #cccccc;
+    padding: 15px 20px;
+    border-radius: 40px 40px;
+    margin: 20px 0;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    padding-right: 50px;
+    padding-left: 50px; }
+    .button__main:hover {
+      transform: scale(1.1);
+      transition: transform 200ms; }
+      .button__main:hover::after {
+        opacity: 1;
+        transition: opacity 200ms; }
+    .button__main::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(-10deg, #FF79DA 10%, #9356DC);
+      border-radius: 40px 40px;
+      opacity: 0;
+      z-index: -1; }
+
+footer {
+  position: absolute;
+  bottom: -1110px;
+  right: 0;
+  left: 0; }
 
 /*# sourceMappingURL=menu_style.css.map */

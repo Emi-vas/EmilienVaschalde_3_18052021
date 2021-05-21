@@ -11,6 +11,11 @@ body{
  
     color : $clr-txt;
 
+    a {
+        color: $clr-txt;
+        text-decoration: none;
+    }
+
     p, h2, h3, a, ul{
         font-family: 'Roboto', sans-serif;
     }
