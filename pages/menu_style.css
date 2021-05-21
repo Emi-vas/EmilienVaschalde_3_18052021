@@ -139,9 +139,7 @@ main {
     color: black; }
   .menu__compo__prix {
     /* bloc prix + check*/
-    display: flex;
-    transform: translateX(60px);
-    /*on sort la div pour la rentrer avec l'effet*/ }
+    display: flex; }
     .menu__compo__prix p {
       align-self: flex-end;
       /*mettre le prix en bas*/ }
@@ -155,12 +153,14 @@ main {
     border-top-right-radius: 15px 15px;
     background-color: #99E2D0; }
     .menu__compo__check i {
-      font-size: 1.3em;
-      color: white;
-      padding: 0 17px; }
+      font-size: 0;
+      /*pour que le bloc prenne pas d'espace*/
+      color: white; }
   .menu__compo:hover > .menu__compo__prix {
     animation: slide 500ms forwards; }
     .menu__compo:hover > .menu__compo__prix i {
+      font-size: 1.3em;
+      padding: 0 17px;
       transform: rotate(1turn);
       transition: transform 700ms; }
 

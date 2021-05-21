@@ -98,8 +98,6 @@ main {
 
     &__prix {   /* bloc prix + check*/
         display: flex;
-        transform: translateX(60px);  /*on sort la div pour la rentrer avec l'effet*/
-
         p {
             align-self: flex-end;   /*mettre le prix en bas*/
         }
@@ -111,9 +109,8 @@ main {
         margin-left: 20px;   /*espace avec le prix*/
         
         i{
-          font-size: 1.3em;
+          font-size: 0;   /*pour que le bloc prenne pas d'espace*/
           color: white;
-          padding: 0 17px;
         }
 
         border-bottom-right-radius: $rad-bloc $rad-bloc;
@@ -126,6 +123,8 @@ main {
             animation: slide 500ms forwards;
             
             i {
+                font-size: 1.3em;
+                padding: 0 17px;
                 transform: rotate(1turn);
                 transition: transform 700ms;
             }
