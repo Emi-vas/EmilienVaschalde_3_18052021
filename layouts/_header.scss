@@ -1,10 +1,13 @@
 @import "../utils/_varialbes";
 
 header {
+    background: white;
+    
     h1 {
         text-align: center;
-        margin-top: 20px;
-        margin-bottom: 10px;
+        padding-top: 20px;   /*pour avoir le backroung blanc tu utilies un padding*/
+        padding-bottom: 10px;
+        margin :0;
     
         font-weight: lighter;
     }

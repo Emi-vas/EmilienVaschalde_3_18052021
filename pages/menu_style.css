@@ -21,8 +21,9 @@ body {
 /*------  Acueil ----*/
 header h1 {
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin: 0;
   font-weight: lighter; }
 header .fleche {
   position: absolute;
@@ -64,6 +65,12 @@ footer {
   width: auto;
   height: 250px;
   object-fit: cover; }
+
+header {
+  background: white; }
+
+body {
+  background: #F6F6F6; }
 
 main {
   border-top-left-radius: 40px 40px;
@@ -183,8 +190,7 @@ main {
 .button {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 200px; }
+  justify-content: center; }
   .button__main {
     color: white;
     background: linear-gradient(-10deg, #9356DC 10%, #FF79DA);
@@ -215,11 +221,5 @@ main {
       border-radius: 40px 40px;
       opacity: 0;
       z-index: -1; }
-
-footer {
-  position: absolute;
-  bottom: -1110px;
-  right: 0;
-  left: 0; }
 
 /*# sourceMappingURL=menu_style.css.map */

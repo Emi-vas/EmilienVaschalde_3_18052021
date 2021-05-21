@@ -3,18 +3,22 @@
 /*------  Acueil ----*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&family=Shrikhand&display=swap");
-header h1 {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-weight: lighter; }
-header .fleche {
-  position: absolute;
-  top: 33px;
-  left: 30px;
-  color: #4d4d4d;
-  font-size: 1.2em;
-  font-weight: bold; }
+header {
+  background: white; }
+  header h1 {
+    text-align: center;
+    padding-top: 20px;
+    /*pour avoir le backroung blanc tu utilies un padding*/
+    padding-bottom: 10px;
+    margin: 0;
+    font-weight: lighter; }
+  header .fleche {
+    position: absolute;
+    top: 33px;
+    left: 30px;
+    color: #4d4d4d;
+    font-size: 1.2em;
+    font-weight: bold; }
 
 /*footer*/
 /*------  Acueil ----*/

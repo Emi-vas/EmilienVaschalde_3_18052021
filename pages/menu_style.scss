@@ -12,6 +12,14 @@
     object-fit: cover;
 }
 
+header {
+    background: white;
+}
+
+body {
+    background: $bg-bloc;
+}
+
 main {
     border-top-left-radius: 40px 40px;
     border-top-right-radius: 40px 40px;
@@ -157,8 +165,6 @@ main {
 
 .button {
     @include flex-center;
-    margin-bottom: 200px;
-
 
     &__main {
         @include button-main;
@@ -168,8 +174,5 @@ main {
 }
 
 footer {
-    position: absolute;
-    bottom: -1110px;
-    right: 0;
-    left: 0;
+    
 }
