@@ -79,6 +79,7 @@ main {
         }
 
         &:hover {
+            cursor: pointer;
             background: lighten($color: $clr-prim, $amount: 35);
             i {
                 color: $clr-prim;
@@ -164,3 +165,39 @@ main {
     object-position: 0% 100%;
 }
 
+
+/*------------- Desktop -------------*/
+
+@media all and (min-device-width: 720px) {
+
+    .fonctionnement {
+        @include flex-center;
+        flex-direction: column;
+        justify-content: space-around;
+
+        &__bloc {
+            width: 300px;
+        }
+    }
+
+    .restaurant {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        &__titre {
+            width: 100%;
+            text-align: center;
+
+        }
+
+        &__bloc {
+            width: 400px;
+            transition: all 0.3s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

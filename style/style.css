@@ -20,6 +20,9 @@ header {
     font-size: 1.2em;
     font-weight: bold; }
 
+@media all and (min-device-width: 720px) {
+  h1 {
+    font-size: 3em; } }
 /*footer*/
 /*------  Acueil ----*/
 body {
@@ -61,6 +64,12 @@ footer {
     footer a:hover {
       color: white; }
 
+@media all and (min-device-width: 720px) {
+  footer {
+    text-align: center; }
+    footer h1 {
+      text-align: center;
+      font-size: 2em; } }
 /*footer*/
 /*------  Acueil ----*/
 /*------------------------- Css du coeur ----------------------*/
@@ -154,6 +163,7 @@ main {
       position: absolute;
       left: -13px; }
     .fonctionnement__bloc:hover {
+      cursor: pointer;
       background: #f2eafb; }
       .fonctionnement__bloc:hover i {
         color: #9356DC; }
@@ -228,5 +238,29 @@ main {
 
 .restaurant__bloc--toa img {
   object-position: 0% 100%; }
+
+/*------------- Desktop -------------*/
+@media all and (min-device-width: 720px) {
+  .fonctionnement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around; }
+    .fonctionnement__bloc {
+      width: 300px; }
+
+  .restaurant {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .restaurant__titre {
+      width: 100%;
+      text-align: center; }
+    .restaurant__bloc {
+      width: 400px;
+      transition: all 0.3s; }
+      .restaurant__bloc:hover {
+        transform: scale(1.1); } }
 
 /*# sourceMappingURL=style.css.map */

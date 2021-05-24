@@ -22,3 +22,10 @@ header {
         font-weight: bold;
     }
 }
+
+
+@media all and (min-device-width: 720px) {
+    h1 {
+        font-size: 3em;
+    }
+}

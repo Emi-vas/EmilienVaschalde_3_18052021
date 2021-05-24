@@ -37,3 +37,15 @@ footer {
         }
     }
 }
+
+@media all and (min-device-width: 720px)  {
+    
+    footer {
+        text-align: center;
+
+        h1 {
+            text-align: center;
+            font-size: 2em;
+        }
+    }
+}
