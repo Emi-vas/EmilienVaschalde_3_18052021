@@ -134,7 +134,7 @@ main {
     width: 15%;
     background: #99E2D0; }
   .menu__anim {
-    animation: menu 500ms forwards;
+    animation: menu 900ms forwards;
     transform-origin: top; }
 
 .menu__compo {
@@ -271,12 +271,23 @@ main {
       width: 350px;
       text-align: center; }
 
+  .menu {
+    margin: auto 10px; }
+    .menu__compo {
+      width: 400px; }
+
+  .button {
+    width: 100%; }
+
   body {
     background: white; }
 
   footer {
     width: 90%;
     margin: auto;
-    padding: 15px 0; } }
+    padding: 15px 0; }
+
+  header .fleche {
+    left: 90px; } }
 
 /*# sourceMappingURL=menu_style.css.map */
