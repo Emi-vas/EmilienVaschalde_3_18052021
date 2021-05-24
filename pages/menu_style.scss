@@ -1,9 +1,9 @@
 @import "../layouts/body";
-@import "../layouts/_header";
-@import "../layouts/_footer";
+@import "../layouts/header";
+@import "../layouts/footer";
 
 @import "../utils/mixin";
-@import "../utils/_varialbes";
+@import "../utils/varialbes";
 
 
 .image img {
@@ -38,19 +38,19 @@ main {
     .main__titre {
         position: relative;
        
-        .main__titre__coeur {
+        &__coeur {
             @include coeur;
             bottom: 10px;
             right: 15px;
         }
-        .main__titre__coeur--actif {
+        &__coeur--actif {
             @include coeur;
             bottom: 10px;
             right: 15px;
 
             @include coeur-bg-actif;
         }
-        .main__titre__coeur--actif:hover {
+        &__coeur--actif:hover {
             
             @include coeur-actif-hover;
         }
@@ -175,3 +175,53 @@ main {
     }
 }
 
+@media all and (min-device-width: 720px) {
+    .image img{
+        width: 600px;
+        height: 400px;
+        @include box;
+
+        margin-bottom: 30px;
+    }
+
+    .image {
+        @include flex-center;
+        background: white;
+        
+    }
+
+    main {
+        width: $largeur-pc;
+        margin: auto;
+        padding-left: 0;
+        padding-right: 0;
+
+        top : 0px;
+
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .main__titre--pc {
+            width: 100%;
+            @include flex-center;
+        }
+
+        .main__titre {
+            width: 350px;
+            text-align: center;
+        }
+
+    }
+
+    body {
+        background: white;
+    }
+
+    footer {
+        width: $largeur-pc;
+        margin: auto;
+        padding : 15px 0;
+    }
+}

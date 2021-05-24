@@ -36,6 +36,9 @@ header {
     font-size: 1.2em;
     font-weight: bold; }
 
+@media all and (min-device-width: 720px) {
+  h1 {
+    font-size: 3em; } }
 footer {
   padding: 20px 23px;
   color: white;
@@ -61,6 +64,12 @@ footer {
     footer a:hover {
       color: white; }
 
+@media all and (min-device-width: 720px) {
+  footer {
+    text-align: center; }
+    footer h1 {
+      text-align: center;
+      font-size: 2em; } }
 /*------------------------- Css du coeur ----------------------*/
 /*footer*/
 /*------  Acueil ----*/
@@ -87,7 +96,7 @@ main {
     margin-bottom: 0; }
   main .main__titre {
     position: relative; }
-    main .main__titre .main__titre__coeur {
+    main .main__titre__coeur {
       font-size: 1.3em;
       position: absolute;
       bottom: 30px;
@@ -95,7 +104,7 @@ main {
       color: #4d4d4d;
       bottom: 10px;
       right: 15px; }
-    main .main__titre .main__titre__coeur--actif {
+    main .main__titre__coeur--actif {
       font-size: 1.3em;
       position: absolute;
       bottom: 30px;
@@ -107,7 +116,7 @@ main {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       opacity: 0; }
-    main .main__titre .main__titre__coeur--actif:hover {
+    main .main__titre__coeur--actif:hover {
       transform: scale(1.2);
       opacity: 1;
       transition: all 50ms; }
@@ -226,5 +235,48 @@ main {
       border-radius: 40px 40px;
       opacity: 0;
       z-index: -1; }
+
+@media all and (min-device-width: 720px) {
+  .image img {
+    width: 600px;
+    height: 400px;
+    /*box de la page main*/
+    display: flex;
+    border-radius: 15px 15px;
+    box-shadow: 1px 3px 7px #cccccc;
+    margin: 20px 0;
+    margin-bottom: 30px; }
+
+  .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white; }
+
+  main {
+    width: 90%;
+    margin: auto;
+    padding-left: 0;
+    padding-right: 0;
+    top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    main .main__titre--pc {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    main .main__titre {
+      width: 350px;
+      text-align: center; }
+
+  body {
+    background: white; }
+
+  footer {
+    width: 90%;
+    margin: auto;
+    padding: 15px 0; } }
 
 /*# sourceMappingURL=menu_style.css.map */
