@@ -39,6 +39,7 @@ header {
 @media all and (min-device-width: 720px) {
   h1 {
     font-size: 3em; } }
+/*------------------------- Css du coeur ----------------------*/
 footer {
   padding: 20px 23px;
   color: white;
@@ -69,7 +70,13 @@ footer {
     text-align: center; }
     footer h1 {
       text-align: center;
-      font-size: 2em; } }
+      font-size: 2em; }
+    footer ul {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    footer li {
+      margin-right: 30px; } }
 /*------------------------- Css du coeur ----------------------*/
 /*footer*/
 /*------  Acueil ----*/

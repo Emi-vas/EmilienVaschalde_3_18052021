@@ -39,6 +39,7 @@ body {
     font-family: 'Shrikhand', cursive;
     font-weight: lighter; }
 
+/*------------------------- Css du coeur ----------------------*/
 footer {
   padding: 20px 23px;
   color: white;
@@ -69,7 +70,13 @@ footer {
     text-align: center; }
     footer h1 {
       text-align: center;
-      font-size: 2em; } }
+      font-size: 2em; }
+    footer ul {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    footer li {
+      margin-right: 30px; } }
 /*footer*/
 /*------  Acueil ----*/
 /*------------------------- Css du coeur ----------------------*/
@@ -243,10 +250,11 @@ main {
 @media all and (min-device-width: 720px) {
   .fonctionnement {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    justify-content: space-around; }
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    .fonctionnement__titre {
+      width: 100%;
+      text-align: center; }
     .fonctionnement__bloc {
       width: 300px; }
 

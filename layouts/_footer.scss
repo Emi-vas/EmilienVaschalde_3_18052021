@@ -1,3 +1,5 @@
+@import "../utils/mixin";
+
 footer {
     padding: 20px $marge;
     color: white;
@@ -46,6 +48,14 @@ footer {
         h1 {
             text-align: center;
             font-size: 2em;
+        }
+
+        ul {
+            @include flex-center;
+        }
+
+        li {
+            margin-right: 30px;
         }
     }
 }

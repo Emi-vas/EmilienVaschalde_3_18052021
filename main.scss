@@ -171,12 +171,19 @@ main {
 @media all and (min-device-width: 720px) {
 
     .fonctionnement {
-        @include flex-center;
-        flex-direction: column;
+        display: flex;
+        
         justify-content: space-around;
+        flex-wrap: wrap;
+
+        &__titre {
+            width: 100%;
+            text-align: center;
+        }
 
         &__bloc {
             width: 300px;
+            
         }
     }
 
