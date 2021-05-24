@@ -268,8 +268,9 @@ main {
       align-items: center;
       justify-content: center; }
     main .main__titre {
-      width: 350px;
-      text-align: center; }
+      width: 370px;
+      text-align: center;
+      margin-bottom: 30px; }
 
   .menu {
     margin: auto 10px; }
@@ -288,6 +289,7 @@ main {
     padding: 15px 0; }
 
   header .fleche {
-    left: 90px; } }
+    left: 90px;
+    font-size: 1.5em; } }
 
 /*# sourceMappingURL=menu_style.css.map */
