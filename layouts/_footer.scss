@@ -2,7 +2,6 @@
 
 footer {
     padding: 20px $marge;
-    color: white;
     background: $clr-txt-alt;
     
     h1 {
@@ -13,7 +12,7 @@ footer {
     }
 
     .footer__titre {
-        color: white;
+        color: white; 
     }
 
     ul {
@@ -22,7 +21,7 @@ footer {
     }
 
     li {
-        padding: 3px 0;
+        padding: 3px 0;  /*espace entre les lignes*/
 
         i {
             padding-right: 10px;
@@ -32,8 +31,7 @@ footer {
 
     a {
         color: $clr-txt-alt3;
-        text-decoration: none;
-
+        
         &:hover {
             color: white;
         }
@@ -43,7 +41,6 @@ footer {
 @media all and (min-device-width: 720px)  {
     
     footer {
-        text-align: center;
 
         h1 {
             text-align: center;

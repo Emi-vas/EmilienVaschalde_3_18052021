@@ -28,7 +28,6 @@ header {
 body {
   margin: 0;
   padding: 0;
-  width: 100%;
   color: #000; }
   body a {
     color: #000;
@@ -42,7 +41,6 @@ body {
 /*------------------------- Css du coeur ----------------------*/
 footer {
   padding: 20px 23px;
-  color: white;
   background: #4d4d4d; }
   footer h1 {
     margin: 5px 0;
@@ -55,28 +53,26 @@ footer {
     list-style: none;
     padding-left: 0; }
   footer li {
-    padding: 3px 0; }
+    padding: 3px 0;
+    /*espace entre les lignes*/ }
     footer li i {
       padding-right: 10px;
       font-size: 0.9em; }
   footer a {
-    color: #d9d9d9;
-    text-decoration: none; }
+    color: #d9d9d9; }
     footer a:hover {
       color: white; }
 
 @media all and (min-device-width: 720px) {
-  footer {
-    text-align: center; }
-    footer h1 {
-      text-align: center;
-      font-size: 2em; }
-    footer ul {
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-    footer li {
-      margin-right: 30px; } }
+  footer h1 {
+    text-align: center;
+    font-size: 2em; }
+  footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  footer li {
+    margin-right: 30px; } }
 /*footer*/
 /*------  Acueil ----*/
 /*------------------------- Css du coeur ----------------------*/
