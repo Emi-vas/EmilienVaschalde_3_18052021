@@ -223,7 +223,8 @@ main {
     .restaurant__bloc__coeur--actif:hover {
       transform: scale(1.2);
       opacity: 1;
-      transition: all 50ms; }
+      transition: all 50ms;
+      cursor: pointer; }
     .restaurant__bloc__nouveau {
       background: #99E2D0;
       color: #278870;

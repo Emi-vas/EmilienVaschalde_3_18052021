@@ -126,7 +126,8 @@ main {
     main .main__titre__coeur--actif:hover {
       transform: scale(1.2);
       opacity: 1;
-      transition: all 50ms; }
+      transition: all 50ms;
+      cursor: pointer; }
 
 .menu {
   margin: 40px 0; }
